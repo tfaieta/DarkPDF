@@ -12,7 +12,8 @@ class App extends Component {
   state = {
     file: './sample.pdf',
     numPages: null,
-    svg: "svg"
+    svg: "svg",
+    loaded: false
   }
 
   onFileChange = (event) => {
@@ -22,7 +23,7 @@ class App extends Component {
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
-    this.setState({ numPages });
+    this.setState({ numPages, loaded: true });
   }
 
   render() {
@@ -32,8 +33,6 @@ class App extends Component {
       <div className="Example">
         <header>
           <h1>DarkPDF</h1>
-        </header>
-        <div className="Example__container">
           <div className="Example__container__load">
             <label htmlFor="file">Load from file:</label>&nbsp;
             <input
@@ -41,6 +40,8 @@ class App extends Component {
               onChange={this.onFileChange}
             />
           </div>
+        </header>
+        <div className="Example__container">
           <div className="Example__container__document">
             <Document
               file={file}
@@ -55,6 +56,7 @@ class App extends Component {
                       key={`page_${index + 1}`}
                       pageNumber={index + 1}
                       renderMode={svg}
+                      className={this.state.loaded ? "darkify" : null}
                     />
                   ),
                 )
