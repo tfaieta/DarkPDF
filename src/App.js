@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className="Example">
         <header>
-          <h1>react-pdf sample page</h1>
+          <h1>DarkPDF</h1>
         </header>
         <div className="Example__container">
           <div className="Example__container__load">

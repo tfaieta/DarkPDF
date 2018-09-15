@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #525659;
+  background-color: #0F111A	;
   font-family: Segoe UI, Tahoma, sans-serif;
 }
 .Example input,
@@ -8,7 +8,7 @@ body {
   font: inherit;
 }
 .Example header {
-  background-color: #323639;
+  background-color: #000000	;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   padding: 20px;
   color: white;
