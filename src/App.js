@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import './App.css';
-
 
 const options = {
   cMapUrl: 'cmaps/',
