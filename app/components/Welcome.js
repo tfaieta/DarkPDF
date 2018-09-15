@@ -7,7 +7,7 @@ export default class Welcome extends Component {
           <h1 style={{textAlign: 'center'}}>
             Welcome to DarkPDF
           </h1>
-        </div> 
+      </div> 
     )
   }
 }
