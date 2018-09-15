@@ -1,18 +1,67 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { render } from 'react-dom';
+import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 import './App.css';
 
+
+const options = {
+  cMapUrl: 'cmaps/',
+  cMapPacked: true,
+};
+
 class App extends Component {
+  state = {
+    file: './sample.pdf',
+    numPages: null,
+  }
+
+  onFileChange = (event) => {
+    this.setState({
+      file: event.target.files[0],
+    });
+  }
+
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
+
   render() {
+    const { file, numPages } = this.state;
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div className="Example">
+        <header>
+          <h1>react-pdf sample page</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="Example__container">
+          <div className="Example__container__load">
+            <label htmlFor="file">Load from file:</label>&nbsp;
+            <input
+              type="file"
+              onChange={this.onFileChange}
+            />
+          </div>
+          <div className="Example__container__document">
+            <Document
+              file={file}
+              onLoadSuccess={this.onDocumentLoadSuccess}
+              options={options}
+            >
+              {
+                Array.from(
+                  new Array(numPages),
+                  (el, index) => (
+                    <Page
+                      key={`page_${index + 1}`}
+                      pageNumber={index + 1}
+                    />
+                  ),
+                )
+              }
+            </Document>
+          </div>
+        </div>
       </div>
     );
   }

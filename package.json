@@ -25,6 +25,7 @@
 		"react": "^16.4.1",
 		"react-dev-utils": "^5.0.1",
 		"react-dom": "^16.5.1",
+		"react-pdf": "^3.0.5",
 		"wait-on": "^3.0.1"
 	},
 	"devDependencies": {
