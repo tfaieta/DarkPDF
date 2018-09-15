@@ -20,6 +20,7 @@
 		"dist": "npx build --x64 --macos --win --linux --c.extraMetadata.main=build/electron.js -p always"
 	},
 	"dependencies": {
+		"antd": "^3.9.2",
 		"electron-is-dev": "^0.3.0",
 		"electron-publisher-s3": "^20.17.2",
 		"react": "^16.4.1",

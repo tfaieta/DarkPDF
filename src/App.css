@@ -1,3 +1,5 @@
+@import '../node_modules/antd/dist/antd.css'; 
+
 @font-face {
   font-family: 'noe-display-bold';
   src: 
@@ -7,7 +9,7 @@
 }
 body {
   margin: 0;
-  background-color: #0F111A	;
+  background-color: #090B10	;
   font-family: 'noe-diplay-bold', Tahoma, sans-serif;
 }
 .Example input,
@@ -15,22 +17,22 @@ body {
   font: inherit;
 }
 .Example header {
-  background-color: #000000	;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  background-color: #0F111A	;
+  left: 0;
+  width: 50px;
+  position: fixed;
+  height: 100%;
+  padding: 0;
   color: white;
 }
 .Example header h1 {
   font-size: inherit;
-  padding-top: 10px;
   margin: 0;
 }
 .Example__container header {
   display: flex;
   flex-direction: column;
   align-items: right;
-  margin: 10px 0;
-  padding: 10px;
 }
 .Example__container__load header {
   margin-top: 1em;
@@ -58,5 +60,5 @@ body {
   color: white;
 }
 .darkify svg {
-  background-color: #000000
+  background-color: #0F111A;
 }

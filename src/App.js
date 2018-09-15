@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import { Icon } from 'antd';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import './App.css';
 
@@ -32,9 +33,8 @@ class App extends Component {
     return (
       <div className="Example">
         <header>
-          <h1>DarkPDF</h1>
           <div className="Example__container__load">
-            <label htmlFor="file">Load from file:</label>&nbsp;
+          <Icon type="upload" theme="outlined" />
             <input
               type="file"
               onChange={this.onFileChange}
