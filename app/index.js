@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import { Welcome } from "../app/components/Welcome/Welcome";
 import Root from './containers/Root';
 import { configureStore, history } from './store/configureStore';
 import './app.global.css';
@@ -10,7 +9,13 @@ const store = configureStore();
 
 render(
   <AppContainer>
-    <Welcome/>
+    <div style={{flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'}}>
+      <h1 style={{textAlign: 'center'}}>
+        Welcome to DarkPDF
+      </h1>
+    </div>  
   </AppContainer>,
   document.getElementById('root')
 );
