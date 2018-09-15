@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'noe-display-bold';
+  src: 
+    local('noe-display-bold'),
+    url(./fonts/noe-display-bold.woff) 
+    format('woff');
+}
+
 body {
   margin: 0;
   background-color: #0F111A	;
-  font-family: Segoe UI, Tahoma, sans-serif;
+  font-family: 'noe-diplay-bold', Tahoma, sans-serif;
 }
 .Example input,
 .Example button {
@@ -15,6 +23,7 @@ body {
 }
 .Example header h1 {
   font-size: inherit;
+  padding-top: 10px;
   margin: 0;
 }
 .Example__container {

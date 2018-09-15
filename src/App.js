@@ -12,6 +12,7 @@ class App extends Component {
   state = {
     file: './sample.pdf',
     numPages: null,
+    svg: "svg"
   }
 
   onFileChange = (event) => {
@@ -25,7 +26,7 @@ class App extends Component {
   }
 
   render() {
-    const { file, numPages } = this.state;
+    const { file, numPages, svg } = this.state;
 
     return (
       <div className="Example">
@@ -53,6 +54,7 @@ class App extends Component {
                     <Page
                       key={`page_${index + 1}`}
                       pageNumber={index + 1}
+                      renderMode={svg}
                     />
                   ),
                 )
