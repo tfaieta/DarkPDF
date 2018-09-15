@@ -11,7 +11,8 @@ createWindow = () => {
 		backgroundColor: '#F7F7F7',
 		minWidth: 880,
 		show: false,
-		titleBarStyle: 'hidden',
+		frame: false,
+		titleBarStyle: 'default',
 		webPreferences: {
 			nodeIntegration: false,
 			preload: __dirname + '/preload.js',
@@ -19,6 +20,8 @@ createWindow = () => {
 		height: 860,
 		width: 1280,
 	});
+
+	mainWindow.isMovable(true);
 
 	mainWindow.loadURL(
 		isDev

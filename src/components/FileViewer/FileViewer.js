@@ -15,12 +15,6 @@ export default class FileViewer extends Component {
     loaded: false
     }
 
-    onFileChange = (event) => {
-    this.setState({
-        file: event.target.files[0],
-    });
-    }
-
     onDocumentLoadSuccess = ({ numPages }) => {
     this.setState({ numPages, loaded: true });
     }
