@@ -28,7 +28,6 @@ export default class FileViewer extends Component {
         });
     }
 
-
     render() {
         const { file, numPages, svg } = this.state;
         return (
