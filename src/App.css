@@ -1,16 +1,9 @@
 @import '../node_modules/antd/dist/antd.css'; 
 
-@font-face {
-  font-family: 'noe-display-bold';
-  src: 
-    local('noe-display-bold'),
-    url(./fonts/noe-display-bold.woff) 
-    format('woff');
-}
 body {
   margin: 0;
   background-color: #090B10	;
-  font-family: 'noe-diplay-bold', Tahoma, sans-serif;
+  font-family: Tahoma, sans-serif;
 }
 .Example input,
 .Example button {
@@ -61,4 +54,21 @@ body {
 }
 .darkify svg {
   background-color: #0F111A;
+}
+.Default {
+  flex-direction: column;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: auto !important;
+  padding-top: 18%
+}
+.Default__Title {
+  color: #ffffff;
+  font-family: Tahoma, sans-serif;
+}
+
+.Default__subTitle {
+  color: #08c;
+  font-family: Tahoma, sans-serif;
 }

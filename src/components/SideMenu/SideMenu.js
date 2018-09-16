@@ -9,12 +9,13 @@ export default class SideMenu extends Component {
         });
     }
 
+    // TODO: ADD FILEVIEWER REDO LOGIC!!!!
     render() {
         return (
         <div>
             <header>
             <div className="Example__container__load">
-                <Icon type="upload" style={{ fontSize: '25px', margin: 10, marginTop: 15, color: '#08c'}}>
+                <Icon type="upload" style={{ fontSize: '25px', margin: 10, marginTop: 30, color: '#08c'}}>
                     <input
                     type="file"
                     style={{display: "none"}}
