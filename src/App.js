@@ -6,10 +6,14 @@ import Default from './components/Default/Default';
 
 class App extends Component {
   render() {
+    this.state = {
+      activity: false,
+    }
+
     return (
       <div className="Example">
         <SideMenu/>
-        <Default/>
+        {this.state.activity ? <FileViewer/> : <Default/>}
       </div>
     );
   }
