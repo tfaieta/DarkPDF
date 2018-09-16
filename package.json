@@ -18,7 +18,7 @@
 		"start": "concurrently \"cross-env BROWSER=none yarn react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
 		"pack": "electron-builder --dir",
 		"dist": "npx build --x64 --macos --win --linux --c.extraMetadata.main=build/electron.js -p always",
-		"electron-toolkit": "electron ./node_modules/electron-toolkit" 
+		"electron-toolkit": "electron ./node_modules/electron-toolkit"
 	},
 	"dependencies": {
 		"antd": "^3.9.2",
@@ -28,6 +28,7 @@
 		"react": "^16.4.1",
 		"react-dev-utils": "^5.0.1",
 		"react-dom": "^16.5.1",
+		"react-dropzone": "^5.1.0",
 		"react-pdf": "^3.0.5",
 		"wait-on": "^3.0.1"
 	},
