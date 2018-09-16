@@ -5,11 +5,11 @@ import FileViewer from './components/FileViewer/FileViewer';
 import Default from './components/Default/Default';
 
 class App extends Component {
-  render() {
-    this.state = {
-      activity: false,
-    }
+  state = {
+    activity: false,
+  }
 
+  render() {
     return (
       <div className="Example">
         <SideMenu/>
