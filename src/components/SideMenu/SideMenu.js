@@ -15,7 +15,7 @@ export default class SideMenu extends Component {
                 </Icon>
             </div> */}
             <div className="Example__container__load">
-                <Icon type="zoom-in" style={{ fontSize: '25px', margin: 10, marginTop: 15, color: '#08c'}}>
+                <Icon type="zoom-in" style={{ fontSize: '25px', margin: 10, marginTop: 35, color: '#08c'}}>
                 </Icon>
             </div>
             <div className="Example__container__load">
