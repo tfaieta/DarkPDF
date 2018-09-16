@@ -72,3 +72,13 @@ body {
   color: #08c;
   font-family: Tahoma, sans-serif;
 }
+
+::-webkit-scrollbar {     
+  background-color: #0F111A;
+  width: .5em
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+  background:  #08c
+}
