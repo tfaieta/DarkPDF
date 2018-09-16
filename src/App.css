@@ -54,6 +54,8 @@ body {
 }
 .darkify svg {
   background-color: #0F111A;
+  stroke: #ffffff;
+  fill: none
 }
 .Default {
   flex-direction: column;
@@ -78,7 +80,6 @@ body {
   width: .5em
 }
 
-::-webkit-scrollbar-thumb:window-inactive,
 ::-webkit-scrollbar-thumb {
   background:  #08c
 }

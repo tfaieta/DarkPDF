@@ -21,6 +21,7 @@ export default class FileViewer extends Component {
             file: '',
             dropzoneActive: false,
             defaultActive: true,
+            fill: '#fff'
         }
     }
 

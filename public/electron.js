@@ -12,7 +12,7 @@ createWindow = () => {
 		minWidth: 880,
 		show: false,
 		frame: false,
-		titleBarStyle: 'default',
+		titleBarStyle: 'hidden',
 		webPreferences: {
 			nodeIntegration: false,
 			preload: __dirname + '/preload.js',
