@@ -1,7 +1,7 @@
 {
 	"name": "darkpdf",
 	"version": "1.0.0",
-	"description": "Woah",
+	"description": "A dark mode for viewing PDF's.",
 	"private": true,
 	"author": "Tony Faieta <tfaieta@gmail.com>",
 	"license": "MIT",
@@ -42,9 +42,9 @@
 		"version-bump-prompt": "^4.1.0"
 	},
 	"build": {
-		"appId": "com.your-domain",
+		"appId": "SU7SD7P8R8.com.tess.darkpdf",
 		"compression": "normal",
-		"productName": "Example",
+		"productName": "DarkPDF",
 		"directories": {
 			"buildResources": "build",
 			"output": "dist"
@@ -59,7 +59,7 @@
 			],
 			"publish": {
 				"provider": "s3",
-				"bucket": "example-releases",
+				"bucket": "darkpdf-releases",
 				"path": "releases"
 			},
 			"category": "public.app-category.news"
@@ -74,7 +74,7 @@
 			"icon": "assets/icon.ico",
 			"publish": {
 				"provider": "s3",
-				"bucket": "example-releases",
+				"bucket": "darkpdf-releases",
 				"path": "releases"
 			}
 		},
@@ -84,11 +84,11 @@
 				"snap",
 				"AppImage"
 			],
-			"description": "Example",
+			"description": "A dark mode PDF viewer.",
 			"category": "Network;Feed",
 			"publish": {
 				"provider": "s3",
-				"bucket": "example-releases",
+				"bucket": "darkpdf-releases",
 				"path": "releases"
 			}
 		}
