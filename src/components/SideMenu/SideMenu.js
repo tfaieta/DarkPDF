@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon } from 'antd';
+import Button from '../Button/Button';
 
 export default class SideMenu extends Component {
 
@@ -7,21 +7,10 @@ export default class SideMenu extends Component {
         return (
         <div>
             <header>
-            {/* <div className="Example__container__load">
-                <Icon type="upload" style={{ fontSize: '25px', margin: 10, marginTop: 15, color: '#08c'}}>
-                    <input
-                    type="file"
-                    onChange={this.props.onFileUpload}/>
-                </Icon>
-            </div> */}
-            <div className="Example__container__load">
-                <Icon type="zoom-in" style={{ fontSize: '25px', margin: 10, marginTop: 35, color: '#08c'}}>
-                </Icon>
-            </div>
-            <div className="Example__container__load">
-                <Icon type="zoom-out" style={{ fontSize: '25px', margin: 10, marginTop: 15, color: '#08c'}}>
-                </Icon>
-            </div>
+            <Button type="zoom-in"/>
+            <Button type="zoom-out"/>
+            <Button type="book"/>
+            <Button type="github"/>
             </header>
         </div>
         )
