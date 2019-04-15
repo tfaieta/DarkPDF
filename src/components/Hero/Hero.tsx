@@ -20,4 +20,6 @@ const DarkPDFLogo = styled.img``;
 
 const Header = styled.h1``;
 
-const Subtitle = styled.p``;
+const Subtitle = styled.p`
+  color: #08c;
+`;

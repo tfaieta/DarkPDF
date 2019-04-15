@@ -21,6 +21,15 @@ body {
   --lineHeight: 1vh;
 }
 
+::-webkit-scrollbar {
+  background-color: #0f111a;
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #08c;
+}
+
 h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

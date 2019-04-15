@@ -2,13 +2,17 @@ import React, { SFC } from "react";
 import Logo from "../assets/Logo.svg";
 import styled from "styled-components";
 import Hero from "./Hero/Hero";
+import Toolbar from "./Toolbar/Toolbar";
 
 interface AppProps {}
 
 const App: SFC<AppProps> = () => (
-  <Container>
-    <Hero />
-  </Container>
+  <div>
+    <Container>
+      <Toolbar />
+      <Hero />
+    </Container>
+  </div>
 );
 
 export default App;
@@ -22,5 +26,5 @@ const Container = styled.div`
   align-items: center;
   padding-top: 25%;
 
-  background: black;
+  background: #090b10;
 `;
