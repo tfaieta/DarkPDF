@@ -1,12 +1,9 @@
-DarkPDF is an electron based dark mode viewer for PDF files.
+# Getting Started
 
-```bash
-# Install dependencies
-$ yarn
+**To load up from scratch:**
 
-# Run development mode
-$ yarn dev
+1. Pull Repo
+2. Run `yarn` inside root
+3. To start up the client `yarn start` from the root
 
-# Build packages
-$ yarn build
-```
+This project was bootstrapped using (`electron-typescript-react-boilerplate`)[https://github.com/tfaieta/electron-typescript-react-boilerplate].
