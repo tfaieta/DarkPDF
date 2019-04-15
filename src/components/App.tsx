@@ -1,49 +1,25 @@
 import React, { SFC } from "react";
-import { theme } from "../styles/themes";
 import Logo from "../assets/Logo.svg";
-import { Grommet, Box, Image, Form, FormField, Button } from "grommet";
+import styled from "styled-components";
+import Hero from "./Hero/Hero";
 
 interface AppProps {}
 
 const App: SFC<AppProps> = () => (
-  <div>
-    <Grommet theme={theme}>
-      <Box direction="row-responsive" justify="center" align="center">
-        <Box
-          justify="center"
-          align="center"
-          height="large"
-          width="large"
-          background="black"
-          round="false"
-          gap="large"
-        >
-          <Image src={Logo} />
-          <Form onSubmit={() => console.log("Submit")}>
-            <FormField
-              label="Name"
-              name="name"
-              required
-              validate={{ regexp: /^[a-z]/i }}
-            />
-            <FormField
-              label="Username"
-              name="employeeId"
-              required
-              validate={{ regexp: /^[0-9]{4,6}$/, message: "4-6 digits" }}
-            />
-            <FormField
-              label="Password"
-              name="password"
-              required
-              validate={{ regexp: /^[0-9]{4,6}$/, message: "4-6 digits" }}
-            />
-          </Form>
-          <Button label="Sign Up" onClick={() => {}} />
-        </Box>
-      </Box>
-    </Grommet>
-  </div>
+  <Container>
+    <Hero />
+  </Container>
 );
 
 export default App;
+
+const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+  background: black;
+`;

@@ -1,6 +1,80 @@
-body {
+/* Inter UI */
+@import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  -ms-overflow-style: scrollbar;
-  -webkit-app-region: drag;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  --fontSize: 2vw;
+  --lineHeight: 1vh;
+}
+
+h1 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #fff;
+  font-size: calc((var(--fontSize)) + 1.5vw);
+  letter-spacing: -0.021em;
+  line-height: 3.5vw;
+}
+
+h2 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #fff;
+  font-size: calc((var(--fontSize)) + 1vw);
+  letter-spacing: -0.019em;
+  line-height: 3vw;
+}
+
+h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #fff;
+  font-size: calc((var(--fontSize)) + 0.5vw);
+  letter-spacing: -0.017em;
+  line-height: 2.5vw;
+}
+
+h4 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #fff;
+  font-size: calc((var(--fontSize)) + 0.25vw);
+  letter-spacing: -0.017em;
+  line-height: 2vw;
+}
+
+a {
+  color: #fff;
+}
+
+p,
+span,
+ul,
+li {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #fff;
+  font-size: calc((var(--fontSize)) + 0.25vw);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 2vw;
 }

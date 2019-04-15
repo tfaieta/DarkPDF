@@ -15,8 +15,6 @@
     "electron-is-dev": "^1.1.0",
     "electron-publisher-s3": "^20.17.2",
     "graphql": "^14.2.1",
-    "grommet": "^2.6.5",
-    "grommet-icons": "^4.2.0",
     "react": "^16.8.6",
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.6",
