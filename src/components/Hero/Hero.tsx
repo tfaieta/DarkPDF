@@ -9,9 +9,7 @@ const Hero: React.SFC<HeroProps> = props => {
     <div>
       <DarkPDFLogo src={Logo} />
       <Header>DarkPDF</Header>
-      <Subtitle>
-        An open-source, dark mode PDF viewer for MacOS and the Web.
-      </Subtitle>
+      <Subtitle>Drop in a PDF or Browse</Subtitle>
     </div>
   );
 };

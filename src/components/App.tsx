@@ -20,6 +20,7 @@ const Container = styled.div`
   margin: auto;
   justify-content: center;
   align-items: center;
+  padding-top: 25%;
 
   background: black;
 `;
