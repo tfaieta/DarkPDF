@@ -14,10 +14,12 @@ html {
 }
 
 body {
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region: drag;
   height: 100%;
   margin: 0;
   padding: 0;
-  --fontSize: 2vw;
+  --fontSize: 1vw;
   --lineHeight: 1vh;
 }
 
